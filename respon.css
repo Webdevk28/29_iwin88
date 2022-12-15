@@ -1,0 +1,267 @@
+@media (min-width: 320px) and (max-width: 480px){
+    .zone{
+        overflow: hidden;
+    }
+    .zone-item{
+        width: 100%;
+    }
+    .head-item{
+        display:flex;
+        flex-direction: row!important;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 15px;
+    }
+    .head .head-menu,
+    .head .logo{
+        display: none;
+    }
+    .head .close-menu,
+    .head .logos{
+        display: block;
+    }
+
+    html { font-size: 12px; }
+    :root {
+      --marquee-width: 100vw;
+      --marquee-height: 16vh;
+      --marquee-elements-displayed: 3;
+    }
+    .marquee:before, .marquee:after { width: 5rem; }
+
+
+    /* card */
+    .main .cards{
+        --spacing: 10px;
+        --columns: 2;
+       padding: 10px;
+    }
+    
+    /* how to join */
+    .main .boxed{
+        --columns: 1;
+    }
+
+    /* how to play */
+    .main .play{
+        display: flex; 
+        flex-direction: column-reverse;
+        padding: 15px;
+    }
+    .main .play-item{
+        width: 100%;
+    }
+
+    /* rate */
+    .main .rate-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .main .rate-left,
+    .main .rate-middle,
+    .main .rate-right{
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* reviews */
+    .main .review{
+        display: flex;
+        flex-direction: column;
+    }
+    .main .review-item{
+        width: 100%;
+    }
+    /* choose */
+    .main .choose-item{
+        width: 100%;
+        margin: 0 10px; 
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .main .tai-img{
+        width: 200px;
+    }
+    /* introduc */
+    .main .intro-img{
+        width: 80%;
+    }
+
+    /* topgame */
+    .main .topgame-title{
+        margin: 0;
+    }
+    .main .topgame-img{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .main .game-image{
+        width: 47%;
+    }
+    /* footer */
+    .footer .footer-content{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .footer .footer-item{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .footer .footer-item2{
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .zone{
+        overflow: hidden;
+    }
+    .zone-item{
+        width: 100%;
+    }
+    .logo-img{
+        margin-top: 70px;
+        position: none;
+    }
+    .head .head-menu{
+        display: none;
+    }
+    .head .close-menu{
+        display: block;
+    }
+
+    html { font-size: 12px; }
+    :root {
+      --marquee-width: 100vw;
+      --marquee-elements-displayed: 3;
+    }
+    .marquee:before, .marquee:after { width: 5rem; }
+
+
+    /* card */
+    .main .cards{
+        --spacing: 10px;
+        --columns: 3;
+       padding: 10px;
+    }
+    /* how to play */
+    .main .play{
+        width: 100%;
+        display: flex; 
+        flex-direction: column-reverse;
+        padding: 15px 0;
+    }
+    .main .play-item{
+        width: 100%;
+    }
+    .main .play{
+        width: 70%;
+    }
+
+    /* rate */
+    .main .rate-item{
+        display: flex;
+        flex-direction: column;
+    }
+    .main .rate-left,
+    .main .rate-middle,
+    .main .rate-right{
+        width: 100%;
+        margin-top: 10px;
+    }
+    /* reviews */
+    .main .review-item{
+        width: 100%;
+    }
+    .main .review-img{
+        width: 100%;
+        padding: 10px;
+    }
+    /* choose */
+    .main .choose-item{
+        width: 100%;
+        margin: 0 15px;
+    }
+    .main .tai-img{
+        width: 200px;
+    }
+    /* introduc */
+    .main .intro-img{
+        width: 80%;
+    }
+
+    /* topgame */
+    .main .topgame-title{
+        margin: 0;
+    }
+    .main .topgame-img{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        padding: 15px;
+    }
+    .main .game-image{
+        width: 23%;
+    }
+    /* footer */
+    .footer .footer-content{
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+    }
+    .footer .footer-item{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .footer .footer-item2{
+        width: 100%;
+        display: flex;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1025px){
+    .zone{
+        overflow: hidden;
+    }
+    .zone-item{
+        width: 100%;
+    }
+    .logo-img{
+        margin-top: 10px;
+    }
+    .menu-item{
+        font-size: 14px;
+    }
+    html { font-size: 12px; }
+    :root {
+      --marquee-width: 100vw;
+      /* --marquee-height: 40vh; */
+      --marquee-elements-displayed: 3;
+    }
+    .marquee:before, .marquee:after { width: 5rem; }
+
+    /* how to play */
+    .main .play-item{
+        padding: 15px;
+    }
+
+    /* rate */
+    .main .rate{
+        width: 100%;
+    }
+    /* choose */
+    .main .choose-item{
+        width: 100%;
+        margin: 0 15px;
+    }
+    .main .tai-img{
+        width: 200px;
+    }
+    /* introduc */
+    .main .intro-img{
+        width: 50%;
+    }
+}

@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@300&family=Dancing+Script:wght@500&family=Darker+Grotesque:wght@500&family=EB+Garamond&family=Kenia&family=Montserrat:wght@500&family=Poppins&family=Quicksand:wght@500&family=Tinos&family=Ubuntu&family=Zilla+Slab:wght@500&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: #6868fc;
+    font-family: 'Be Vietnam Pro', sans-serif!important;
+  }
+  .main .main-title{
+    font-family: 'Dancing Script', cursive!important;
+}
+
+/* scroll to top */
+html,
+body{
+    scroll-behavior: smooth;
+  }
+
+/* scroll left */
+body::-webkit-scrollbar {
+    width: 10px;
+  }
+  body::-webkit-scrollbar-track {
+    background-color: rgb(247, 64, 138);
+  }
+  body::-webkit-scrollbar-thumb {
+    background: linear-gradient(to bottom, blue, #f9f871);
+    border-radius: 10px;
+  }
+/* .logo-img{
+    margin-top: 350px;
+} */
+.head-menu{
+    margin-top: 70px;
+}
+/* .zone {
+    background: url("./images/cover-28.png") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; 
+} */
+/* card */
+.cards {
+    --spacing: 20px;
+    --columns: 5;
+    margin-left: calc(-1 * var(--spacing));
+  }
+.card {
+width: calc(calc(100% / var(--columns)) - var(--spacing));
+margin-left: var(--spacing);
+margin-bottom: var(--spacing);
+}
+.card-title {
+word-break: break-all;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+word-break: break-word;
+}
+
+/* box */
+.boxed {
+    --spacing: 25px;
+    --columns: 3;
+    margin-left: calc(-1 * var(--spacing));
+  }
+.box {
+width: calc(calc(100% / var(--columns)) - var(--spacing));
+margin-left: var(--spacing);
+margin-bottom: var(--spacing);
+}
+.box-title {
+word-break: break-all;
+display: -webkit-box;
+-webkit-line-clamp: 3;
+-webkit-box-orient: vertical;
+overflow: hidden;
+text-overflow: ellipsis;
+word-break: break-word;
+}
+
+
+  /* marquee slide */
+:root {
+    --marquee-width: 100%;
+    /* --marquee-height: 35vh; */
+    /* --marquee-elements: 12; */ /* defined with JavaScript */
+    --marquee-elements-displayed: 5;
+    --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+    --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+  }
+.marquee {
+    width: var(--marquee-width);
+    height: var(--marquee-height);
+    /* background-color: #111; */
+    color: #eee;
+    overflow: hidden;
+    position: relative;
+  }
+  .marquee:before, .marquee:after {
+    position: absolute;
+    top: 0;
+    width: 10rem;
+    height: 100%;
+    content: "";
+    z-index: 1;
+  }
+  .marquee:before {
+    left: 0;
+    background: linear-gradient(to right, #6868fc 0%, transparent 70%);
+  }
+  .marquee:after {
+    right: 0;
+    background: linear-gradient(to left, #6868fc 0%, transparent 70%);
+  }
+  .marquee-content {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    animation: scrolling var(--marquee-animation-duration) linear infinite;
+  }
+  /* .marquee-content:hover {
+    animation-play-state: paused;
+  } */
+  @keyframes scrolling {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(calc(-1 * var(--marquee-element-width) * var(--marquee-elements))); }
+  }
+  .marquee-content li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* text-align: center; */
+    flex-shrink: 0;
+    width: var(--marquee-element-width);
+    max-height: 100%;
+    font-size: calc(var(--marquee-height)*3/4); /* 5rem; */
+    white-space: nowrap;
+  }
+  
+  .marquee-content li img {
+    width: 80%;
+    height: 100%;
+    border: 4px solid #eee;
+    object-fit: coverj;
+    border-radius: 50px;
+  }
+
+  /* box */
+  .boxs{
+    background-image: linear-gradient(to right,#1cf8b2,#22fc43,#1cf8b2);
+    box-shadow: 0 0 5px #fff, 0 0 13px #e5bb58, 0 0 21px #e5bb58, 0 0 29px #e5bb58;
+  }
+  .boxx{
+    background-image: linear-gradient(to right,#f8391c,#f67a7a,#f8391c);
+  }
